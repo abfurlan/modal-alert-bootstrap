@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modal Alert Bootstrap</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1>Modal Alert Bootstrap</h1>
+            <button type="button" class="btn btn-primary" data-status="primary">Primary</button>
+            <button type="button" class="btn btn-success" data-status="success">Success</button>
+            <button type="button" class="btn btn-danger" data-status="danger">Danger</button>
+            <button type="button" class="btn btn-warning" data-status="warning">Warning</button>
+            <button type="button" class="btn btn-info" data-status="info">Info</button>
+            <button type="button" class="btn btn-default" data-status="default">Default</button>
+            
+        </div>
+        
+        <script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="js/modal-alert.js"></script>
+        <script>
+            $('button').click(function(){
+                var status = $(this).data('status');
+                $.alert({class:status,title:'Título',message:'Sua mensagem aqui...'});
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+.modal .modal-content{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+.modal .modal-header{
+    color:#fff;
+}
+.modal-success .modal-header {
+    background-color: #5cb85c;
+}
+.modal-warning .modal-header {
+    background-color: #f0ad4e;
+}
+.modal-danger .modal-header {
+    background-color: #d9534f;
+}
+.modal-info .modal-header{
+    background-color: #5bc0de;
+}
+.modal-primary .modal-header {
+    background-color: #428bca;
+}
+.modal-default .modal-header{
+    color:#333;
+}
