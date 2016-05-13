@@ -3,10 +3,11 @@
         var settings = $.extend({
             class: 'default',
             title: 'Alerta',
-            message: 'Alerta'
+            message: 'Alerta',
+            effect: ''
         }, options );
         if(!$('#modal-alert').length){
-            var $md = $('<div class="modal" id="modal-alert" tabindex="-1" role="dialog"></div>');
+            var $md = $('<div class="modal '+settings.effect+'" id="modal-alert" tabindex="-1" role="dialog"></div>');
             var $mdd = $('<div class="modal-dialog modal-sm"></div>');
             var $mdc = $('<div class="modal-content"></div>');
             var $mdh = $('<div class="modal-header"><div>');
@@ -28,7 +29,7 @@
         $md.find('.modal-title').html(settings.title);
         $md.find('.modal-body').html(settings.message);
         $md.removeClass()
-        .addClass('modal modal-'+settings.class)
+        .addClass('modal '+settings.effect+' modal-'+settings.class)
         .modal('show');
     };
 }(jQuery));
