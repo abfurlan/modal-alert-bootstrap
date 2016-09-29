@@ -1,4 +1,3 @@
-# modal-alert-bootstrap
 <h1>Alerta com modal bootstrap</h1>
 Exibir alertas com o componente modal Bootstrap.
 
