@@ -1,3 +1,6 @@
+/*
+*Author: Anderson Barreto Furlan
+*/
 (function ($) {
     $.alert = function(options) {
         var settings = $.extend({
